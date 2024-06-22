@@ -3,7 +3,7 @@ var profile = args.FirstOrDefault() ?? "default";
 
 Console.WriteLine($"Overriding {profile} profile credentials");
 
-List<string> input = [];
+List<string> input = new List<string>();
 while (Console.ReadLine() is { } line && line != "")
 {
     input.Add(line);
